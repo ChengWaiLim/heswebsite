@@ -16,12 +16,13 @@
 import Vue from 'vue'
 import Swiper from "swiper";
 import $ from "jquery";
-import Slide from "./Slide"
+import SlideInterface from "./Interface"
 
 export default Vue.extend( {
+  name:"swiper",
   props: {
     slides:{
-      type: Array as () => Array<Slide>,
+      type: Array as () => Array<SlideInterface>,
       required: true,
     }
   },

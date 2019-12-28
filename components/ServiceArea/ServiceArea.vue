@@ -5,31 +5,52 @@
         <div class="col-xl-4 col-md-4">
           <div class="single_service">
             <div class="icon">
-              <i class="flaticon-electrocardiogram"></i>
+              <i :class="serviceBoxList[0].iconClass"></i>
             </div>
-            <h3>Hospitality</h3>
-            <p>Clinical excellence must be the priority for any health care service provider.</p>
-            <a href="#" class="boxed-btn3-white">Apply For a Bed</a>
+            <h3>{{serviceBoxList[0].title}}</h3>
+            <div class="text-wrapper">
+              <p>{{serviceBoxList[0].content}}</p>
+            </div>
+            <div v-show="serviceBoxList[0].button != null">
+              <a
+                :href="serviceBoxList[0].button.path"
+                class="boxed-btn3-white"
+              >{{serviceBoxList[0].button.title}}</a>
+            </div>
           </div>
         </div>
         <div class="col-xl-4 col-md-4">
           <div class="single_service main-background-color2">
             <div class="icon">
-              <i class="flaticon-emergency-call"></i>
+              <i :class="serviceBoxList[1].iconClass"></i>
             </div>
-            <h3>Emergency Care</h3>
-            <p>Clinical excellence must be the priority for any health care service provider.</p>
-            <a href="#" class="boxed-btn3-white">+10 672 356 3567</a>
+            <h3>{{serviceBoxList[1].title}}</h3>
+            <div class="text-wrapper">
+              <p>{{serviceBoxList[1].content}}</p>
+            </div>
+            <div v-show="serviceBoxList[1].button != null">
+              <a
+                :href="serviceBoxList[1].button.path"
+                class="boxed-btn3-white"
+              >{{serviceBoxList[1].button.title}}</a>
+            </div>
           </div>
         </div>
         <div class="col-xl-4 col-md-4">
           <div class="single_service">
             <div class="icon">
-              <i class="flaticon-first-aid-kit"></i>
+              <i :class="serviceBoxList[2].iconClass"></i>
             </div>
-            <h3>Chamber Service</h3>
-            <p>Clinical excellence must be the priority for any health care service provider.</p>
-            <a href="#" class="boxed-btn3-white">Make an Appointment</a>
+            <h3>{{serviceBoxList[2].title}}</h3>
+            <div class="text-wrapper">
+              <p>{{serviceBoxList[2].content}}</p>
+            </div>
+            <div v-show="serviceBoxList[2].button != null">
+              <a
+                :href="serviceBoxList[2].button.path"
+                class="boxed-btn3-white"
+              >{{serviceBoxList[2].button.title}}</a>
+            </div>
           </div>
         </div>
       </div>
@@ -37,23 +58,21 @@
   </div>
 </template>
 <script lang="ts">
-export default{
-    
-}
+import Vue from "vue";
+import { ServiceBoxInterface } from "./Interface";
+export default Vue.extend({
+  name: "service-area",
+  props: {
+    serviceBoxList: {
+      type: Array as () => Array<ServiceBoxInterface>,
+      required: true
+    }
+  }
+});
 </script>
-
-<style lang="sass" scoped>
-@import "@/static/css/bootstrap.min.css"
-@import "@/static/css/owl.carousel.min.css"
-@import "@/static/css/magnific-popup.css"
-@import "@/static/css/font-awesome.min.css"
-@import "@/static/css/themify-icons.css"
-@import "@/static/css/nice-select.css"
-@import "@/static/css/flaticon.css"
-@import "@/static/css/gijgo.css"
-@import "@/static/css/animate.css"
-@import "@/static/css/slicknav.css"
-@import "@/static/css/style.css"
-@import "@/static/sass/hes-style.sass"
-
+<style  lang="sass" scoped>
+.single_service
+  .text-wrapper
+    height: 40%
 </style>
+

@@ -22,12 +22,14 @@
                 <ul>
                   <li>
                     <a href="#">
-                      <i class="fa fa-envelope"></i> info@docmed.com
+                      <i class="fa fa-envelope"></i>
+                      {{email}}
                     </a>
                   </li>
                   <li>
                     <a href="#">
-                      <i class="fa fa-phone"></i> 9029 8193
+                      <i class="fa fa-phone"></i>
+                      {{phone}}
                     </a>
                   </li>
                 </ul>
@@ -41,8 +43,7 @@
           <div class="row align-items-center">
             <div class="col-xl-3 col-lg-2">
               <nuxt-link to="/home" class="logo" prefetch>
-                
-                <img class="logo-photo" src="~/assets/logo.png" alt />
+                <img class="logo-photo" src="@/assets/Education_Logo.png" alt />
                 <p>He's Technology</p>
               </nuxt-link>
             </div>
@@ -50,40 +51,21 @@
               <div class="main-menu d-none d-lg-block">
                 <nav>
                   <ul id="navigation">
-                    <li>
-                      <nuxt-link to="/home">Home</nuxt-link>
+                    
+                    <li v-for="(navigateButton, index) in navigationButtonList" v-bind:key="index">
+                      <nuxt-link :to="navigateButton.path">{{navigateButton.title}}</nuxt-link>
                     </li>
-                    <li>
-                      <a href="#">
-                        Services
-                        <i class="ti-angle-down"></i>
-                      </a>
-                      <ul class="submenu">
-                        <li>
-                          <nuxt-link to="/services/course">Course</nuxt-link>
-                        </li>
-                        <li>
-                          <a href="single-blog.html">Development</a>
-                        </li>
-                      </ul>
-                    </li>
-                    <li>
-                      <a class="active" href="index.html">Teaching Materials</a>
-                    </li>
-                    <li>
-                      <a href="contact.html">Contact</a>
-                    </li>
+
+                      
                   </ul>
                 </nav>
               </div>
             </div>
             <div class="col-xl-3 col-lg-3 d-none d-lg-block">
               <div class="Appointment">
-                <div class="book_btn d-none d-lg-block">
-                  <a
-                    class="popup-with-form main-background-color"
-                    href="#test-form"
-                  >Make an Appointment</a>
+                <div class="book_btn d-none d-lg-block" v-show="button != null">
+                  
+                  <nuxt-link :to="button.path"  class="popup-with-form main-background-color">{{button.title}}</nuxt-link>
                 </div>
               </div>
             </div>
@@ -98,23 +80,26 @@
 </template>
 
 <script lang="ts">
+import {NavigationButtonInterface, HeaderButtonInterface} from "./Interface";
 export default {
-    props: {}
+  name: "base-header",
+  props: {
+    email: {
+      type: String,
+      required: false
+    },
+    phone: {
+      type: String,
+      required: false
+    },
+    navigationButtonList: {
+      type: Array as () => Array<NavigationButtonInterface>,
+      required: false
+    },
+    button: {
+      type: Object as () => HeaderButtonInterface,
+      required: false
+    }
+  }
 };
 </script>
-
-<style lang="sass" scoped>
-@import "@/static/css/bootstrap.min.css"
-@import "@/static/css/owl.carousel.min.css"
-@import "@/static/css/magnific-popup.css"
-@import "@/static/css/font-awesome.min.css"
-@import "@/static/css/themify-icons.css"
-@import "@/static/css/nice-select.css"
-@import "@/static/css/flaticon.css"
-@import "@/static/css/gijgo.css"
-@import "@/static/css/animate.css"
-@import "@/static/css/slicknav.css"
-@import "@/static/css/style.css"
-@import "@/static/sass/hes-style.sass"
-
-</style>

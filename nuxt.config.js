@@ -2,6 +2,25 @@ module.exports = {
   /*
    ** Headers of the page
    */
+  generate: {
+    minify: {
+      collapseWhitespace: false
+    }
+  },
+  css: ["@/static/css/bootstrap.min.css",
+  "@/static/css/owl.carousel.min.css",
+  "@/static/css/magnific-popup.css",
+  "@/static/css/font-awesome.min.css",
+  "@/static/css/themify-icons.css",
+  "@/static/css/nice-select.css",
+  "@/static/css/flaticon.css",
+  "@/static/css/gijgo.css",
+  "@/static/css/animate.css",
+  "@/static/css/slicknav.css",
+  "@/static/css/style.css",
+  "@/static/sass/hes-style.sass",
+  "element-ui/lib/theme-chalk/index.css"],
+  plugins: [{src:"~plugins/element-ui", ssr:true}],
   head: {
     script: [
       { src: "js/vendor/modernizr-3.5.0.min.js" },
@@ -41,11 +60,7 @@ module.exports = {
    ** Customize the progress bar color
    */
   loading: { color: "#3B8070" },
-  generate: {
-    minify: {
-      collapseWhitespace: false
-    }
-  },
+
   /*
    ** Build configuration
    */

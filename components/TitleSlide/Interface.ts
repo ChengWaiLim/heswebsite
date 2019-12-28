@@ -1,4 +1,4 @@
-export default interface TitleSlideData{
+export default interface TitleSlideInterface{
     path: string,
     title:string,
     subTitle:string,

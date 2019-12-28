@@ -1,234 +1,16 @@
 
 <template>
   <section>
-    <Header></Header>
-    <!-- slider_area_start -->
-    <Swiper :slides="slides"></Swiper>
-    <!-- slider_area_end -->
-
-    <!-- service_area_start -->
-    <ServiceArea></ServiceArea>
-    <!-- service_area_end -->
-
-    <!-- welcome_docmed_area_start -->
-    <div class="welcome_docmed_area">
-      <div class="container">
-        <div class="row">
-          <div class="col-xl-6 col-lg-6">
-            <div class="welcome_thumb">
-              <div class="thumb_1">
-                <img src="@/assets/image1.jpg" alt />
-              </div>
-              <div class="thumb_2">
-                <img src="@/assets/image2.jpg" alt />
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-6 col-lg-6">
-            <div class="welcome_docmed_info">
-              <h2>Welcome to Docmed</h2>
-              <h3>
-                Best Care For Your
-                <br />Good Health
-              </h3>
-              <p>
-                Esteem spirit temper too say adieus who direct esteem.
-                It esteems luckily or picture placing drawing. Apartments frequently or motionless on reasonable projecting expression.
-              </p>
-              <ul>
-                <li>
-                  <i class="flaticon-right"></i> Apartments frequently or motionless.
-                </li>
-                <li>
-                  <i class="flaticon-right"></i> Duis aute irure dolor in reprehenderit in voluptate.
-                </li>
-                <li>
-                  <i class="flaticon-right"></i> Voluptatem quia voluptas sit aspernatur.
-                </li>
-              </ul>
-              <a href="#" class="boxed-btn3-white-2">Learn More</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- welcome_docmed_area_end -->
-
-    <!-- offers_area_start -->
-    <div class="our_department_area">
-      <div class="container">
-        <div class="row">
-          <div class="col-xl-12">
-            <div class="section_title text-center mb-55">
-              <h3>Our Departments</h3>
-              <p>
-                Esteem spirit temper too say adieus who direct esteem.
-                <br />It esteems luckily or picture placing drawing.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-xl-4 col-md-6 col-lg-4">
-            <div class="single_department">
-              <div class="department_thumb">
-                <img src="@/assets/image1.jpg" alt />
-              </div>
-              <div class="department_content">
-                <h3>
-                  <a href="#">Eye Care</a>
-                </h3>
-                <p>Esteem spirit temper too say adieus who direct esteem.</p>
-                <a href="#" class="learn_more">Learn More</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-4 col-md-6 col-lg-4">
-            <div class="single_department">
-              <div class="department_thumb">
-                <img src="@/assets/image3.jpg" alt />
-              </div>
-              <div class="department_content">
-                <h3>
-                  <a href="#">Physical Therapy</a>
-                </h3>
-                <p>Esteem spirit temper too say adieus who direct esteem.</p>
-                <a href="#" class="learn_more">Learn More</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-4 col-md-6 col-lg-4">
-            <div class="single_department">
-              <div class="department_thumb">
-                <img src="@/assets/image4.jpg" alt />
-              </div>
-              <div class="department_content">
-                <h3>
-                  <a href="#">Dental Care</a>
-                </h3>
-                <p>Esteem spirit temper too say adieus who direct esteem.</p>
-                <a href="#" class="learn_more">Learn More</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-4 col-md-6 col-lg-4">
-            <div class="single_department">
-              <div class="department_thumb">
-                <img src="@/assets/image5.jpeg" alt />
-              </div>
-              <div class="department_content">
-                <h3>
-                  <a href="#">Diagnostic Test</a>
-                </h3>
-                <p>Esteem spirit temper too say adieus who direct esteem.</p>
-                <a href="#" class="learn_more">Learn More</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-4 col-md-6 col-lg-4">
-            <div class="single_department">
-              <div class="department_thumb">
-                <img src="@/assets/image6.jpeg" alt />
-              </div>
-              <div class="department_content">
-                <h3>
-                  <a href="#">Skin Surgery</a>
-                </h3>
-                <p>Esteem spirit temper too say adieus who direct esteem.</p>
-                <a href="#" class="learn_more">Learn More</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-4 col-md-6 col-lg-4">
-            <div class="single_department">
-              <div class="department_thumb">
-                <img src="@/assets/image7.jpg" alt />
-              </div>
-              <div class="department_content">
-                <h3>
-                  <a href="#">Surgery Service</a>
-                </h3>
-                <p>Esteem spirit temper too say adieus who direct esteem.</p>
-                <a href="#" class="learn_more">Learn More</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- offers_area_end -->
-
-    <!-- testmonial_area_start -->
-    <div class="testmonial_area">
-      <div class="testmonial_active owl-carousel">
-        <div class="single-testmonial testmonial_bg_1 overlay2">
-          <div class="container">
-            <div class="row">
-              <div class="col-xl-10 offset-xl-1">
-                <div class="testmonial_info text-center">
-                  <div class="quote">
-                    <i class="flaticon-straight-quotes"></i>
-                  </div>
-                  <p>
-                    Donec imperdiet congue orci consequat mattis. Donec rutrum porttitor
-                    <br />sollicitudin. Pellentesque id dolor tempor sapien feugiat ultrices nec sed neque.
-                    <br />Fusce ac mattis nulla. Morbi eget ornare dui.
-                  </p>
-                  <div class="testmonial_author">
-                    <h4>Asana Korim</h4>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="single-testmonial testmonial_bg_2 overlay2">
-          <div class="container">
-            <div class="row">
-              <div class="col-xl-10 offset-xl-1">
-                <div class="testmonial_info text-center">
-                  <div class="quote">
-                    <i class="flaticon-straight-quotes"></i>
-                  </div>
-                  <p>
-                    Donec imperdiet congue orci consequat mattis. Donec rutrum porttitor
-                    <br />sollicitudin. Pellentesque id dolor tempor sapien feugiat ultrices nec sed neque.
-                    <br />Fusce ac mattis nulla. Morbi eget ornare dui.
-                  </p>
-                  <div class="testmonial_author">
-                    <h4>Asana Korim</h4>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="single-testmonial testmonial_bg_1 overlay2">
-          <div class="container">
-            <div class="row">
-              <div class="col-xl-10 offset-xl-1">
-                <div class="testmonial_info text-center">
-                  <div class="quote">
-                    <i class="flaticon-straight-quotes"></i>
-                  </div>
-                  <p>
-                    Donec imperdiet congue orci consequat mattis. Donec rutrum porttitor
-                    <br />sollicitudin. Pellentesque id dolor tempor sapien feugiat ultrices nec sed neque.
-                    <br />Fusce ac mattis nulla. Morbi eget ornare dui.
-                  </p>
-                  <div class="testmonial_author">
-                    <h4>Asana Korim</h4>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- testmonial_area_end -->
-
-    <!-- business_expert_area_start  -->
+    <base-header
+      email="s1113618@s.eduhk.hk"
+      phone="90298193"
+      :navigationButtonList="baseHeader.navigationButtonList"
+      :button="baseHeader.button"
+    ></base-header>
+    <swiper :slides="slides"></swiper>
+    <service-area :serviceBoxList="serviceAreaList"></service-area>
+    <welcome-area :welcomeBox="welcomeArea"></welcome-area>
+    <gridbox-area :gridBoxList="gridBoxList"></gridbox-area>
     <div class="business_expert_area">
       <div class="business_tabs_area">
         <div class="container">
@@ -403,7 +185,7 @@
               <div class="footer_widget">
                 <div class="footer_logo">
                   <a href="#">
-                    <img src="img/footer_logo.png" alt />
+                    <img src="@/assets/Education_Logo.png" alt />
                   </a>
                 </div>
                 <p>
@@ -564,41 +346,172 @@
 </template>
 
 <script lang="ts">
-import Swiper from '~/components/Swiper/Swiper.vue';
-import Slide from '~/components/Swiper/Slide.ts';
-import Header from '~/components/Header/Header.vue';
-import ServiceArea from '~/components/ServiceArea/ServiceArea.vue';
+import { Swiper, SlideInterface } from "@/components/Swiper/index";
+import {
+  BaseHeader,
+  NavigationButtonInterface,
+  HeaderButtonInterface
+} from "@/components/BaseHeader/index";
+import {
+  GridboxArea,
+  GridBoxInterface,
+} from "@/components/GridboxArea/index";
+import {
+  ServiceArea,
+  ServiceBoxInterface,
+  ServiceBoxButtonInterface
+} from "@/components/ServiceArea/index.ts";
+import {
+  WelcomeArea,
+  WelcomeAreaInterface,
+  WelcomeAreaButtonInterface
+} from "@/components/WelcomeArea/index.ts";
 export default {
   components: {
-      Swiper, Header, ServiceArea
+    Swiper,
+    BaseHeader,
+    ServiceArea,
+    WelcomeArea,
+    GridboxArea
   },
   data() {
     return {
-      slides: [{
-        path: require('~/assets/slider3.png'),
+      baseHeader: {
+        navigationButtonList: [
+          { title: "Home", path: "/home" },
+          { title: "Course", path: "/course" },
+          { title: "Teaching Material", path: "/teachingMaterial" },
+          { title: "Contact", path: "/contact" }
+        ] as NavigationButtonInterface[],
+        button: {
+          title: "Contact Us",
+          path: "#"
+        } as HeaderButtonInterface
+      },
+      slides: [
+        {
+          path: require("~/assets/slider3.png"),
+          title: "Lorem Ipsum",
+          subTitle: "dolor sit amet"
+        },
+        {
+          path: require("~/assets/slider1.png"),
+          title: "Lorem Ipsum",
+          subTitle: "dolor sit amet"
+        }
+      ] as SlideInterface[],
+      serviceAreaList: [
+        {
+          iconClass: "el-icon-error",
+          title: "Lorem Ipsum",
+          content:
+            "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..",
+          button: {
+            title: "Lorem Ipsum",
+            path: "#"
+          } as ServiceBoxButtonInterface
+        },
+        {
+          iconClass: "el-icon-error",
+          title: "Lorem Ipsum",
+          content:
+            "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..",
+          button: {
+            title: "Lorem Ipsum",
+            path: "#"
+          } as ServiceBoxButtonInterface
+        },
+        {
+          iconClass: "el-icon-error",
+          title: "Lorem Ipsum",
+          content:
+            "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..",
+          button: {
+            title: "Lorem Ipsum",
+            path: "#"
+          } as ServiceBoxButtonInterface
+        }
+      ] as ServiceBoxInterface[],
+      welcomeArea: {
+        subTitle: "Lorem Ipsum",
         title: "Lorem Ipsum",
-        subTitle: "dolor sit amet",
-      },{
-        path: require('~/assets/slider1.png'),
-        title: "Lorem Ipsum",
-        subTitle: "dolor sit amet",
-      }] as Slide[],
-    }
+        content:
+          "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..",
+        points: ["Lorem Ipsum", "Lorem Ipsum"],
+        button: {
+          title: "Lorem Ipsum",
+          path: "#"
+        } as WelcomeAreaButtonInterface
+      } as WelcomeAreaInterface,
+      gridBoxList: [
+        {
+          img: require("@/assets/image1.jpg"),
+          title: "Lorem Ipsum",
+          content:
+            "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..",
+          buttonTitle: "Lorem Ipsum",
+          path:"#"
+        },
+        {
+          img: require("@/assets/image1.jpg"),
+          title: "Lorem Ipsum",
+          content:
+            "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..",
+          buttonTitle: "Lorem Ipsum",
+          path:"#"
+        },
+        {
+          img: require("@/assets/image1.jpg"),
+          title: "Lorem Ipsum",
+          content:
+            "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..",
+          buttonTitle: "Lorem Ipsum",
+          path:"#"
+        },
+        {
+          img: require("@/assets/image1.jpg"),
+          title: "Lorem Ipsum",
+          content:
+            "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..",
+          buttonTitle: "Lorem Ipsum",
+          path:"#"
+        },
+        {
+          img: require("@/assets/image1.jpg"),
+          title: "Lorem Ipsum",
+          content:
+            "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..",
+          buttonTitle: "Lorem Ipsum",
+          path:"#"
+        },
+        {
+          img: require("@/assets/image1.jpg"),
+          title: "Lorem Ipsum",
+          content:
+            "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..",
+          buttonTitle: "Lorem Ipsum",
+          path:"#"
+        },
+        {
+          img: require("@/assets/image1.jpg"),
+          title: "Lorem Ipsum",
+          content:
+            "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..",
+          buttonTitle: "Lorem Ipsum",
+          path:"#"
+        },
+        {
+          img: require("@/assets/image1.jpg"),
+          title: "Lorem Ipsum",
+          content:
+            "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..",
+          buttonTitle: "Lorem Ipsum",
+          path:"#"
+        }
+      ] as GridBoxInterface[]
+    };
   }
 };
 </script>
 <style lang="sass" scoped>
-@import "@/static/css/bootstrap.min.css"
-@import "@/static/css/owl.carousel.min.css"
-@import "@/static/css/magnific-popup.css"
-@import "@/static/css/font-awesome.min.css"
-@import "@/static/css/themify-icons.css"
-@import "@/static/css/nice-select.css"
-@import "@/static/css/flaticon.css"
-@import "@/static/css/gijgo.css"
-@import "@/static/css/animate.css"
-@import "@/static/css/slicknav.css"
-@import "@/static/css/style.css"
-@import "@/static/sass/hes-style.sass"
-
 </style>

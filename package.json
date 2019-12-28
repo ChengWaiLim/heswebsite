@@ -15,6 +15,7 @@
   },
   "dependencies": {
     "@types/jquery": "^3.3.31",
+    "element-ui": "^2.13.0",
     "nuxt": "^2.0.0",
     "owl.carousel": "^2.3.4",
     "swiper": "^5.2.1"

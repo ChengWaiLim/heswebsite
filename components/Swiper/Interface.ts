@@ -1,5 +1,5 @@
 export default interface SlideInterface{
-    path: string;
+    img: string;
     title: string;
     subTitle:string;
     link:string;

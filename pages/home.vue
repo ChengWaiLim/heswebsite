@@ -7,13 +7,14 @@
       :navigationButtonList="baseHeader.navigationButtonList"
       :button="baseHeader.button"
     ></base-header>
-    <swiper :slides="slides"></swiper>
+    <swiper :slideList="slideList"></swiper>
     <service-area :serviceBoxList="serviceAreaList"></service-area>
     <welcome-area :welcomeBox="welcomeArea"></welcome-area>
     <gridbox-area :gridBoxList="gridBoxList"></gridbox-area>
     <tab-area :tabList="tabList"></tab-area>
     <!-- Emergency_contact start -->
-    <div class="Emergency_contact">
+    <static-slide-area :slideList="staticSlideList"></static-slide-area>
+    <!-- <div class="Emergency_contact">
       <div class="conatiner-fluid p-0">
         <div class="row no-gutters">
           <div class="col-xl-6">
@@ -44,7 +45,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div>-->
     <!-- Emergency_contact end -->
 
     <!-- footer start -->
@@ -223,10 +224,7 @@ import {
   NavigationButtonInterface,
   HeaderButtonInterface
 } from "@/components/BaseHeader/index";
-import {
-  GridboxArea,
-  GridBoxInterface,
-} from "@/components/GridboxArea/index";
+import { GridboxArea, GridBoxInterface } from "@/components/GridboxArea/index";
 import {
   ServiceArea,
   ServiceBoxInterface,
@@ -237,10 +235,12 @@ import {
   WelcomeAreaInterface,
   WelcomeAreaButtonInterface
 } from "@/components/WelcomeArea/index.ts";
+import { TabArea, TabInterface } from "@/components/TabArea/index.ts";
 import {
-  TabArea,
-  TabInterface
-} from "@/components/TabArea/index.ts";
+  StaticSlideArea,
+  StaticSlideInterface,
+  StaticSlideButtonInterface
+} from "@/components/StaticSlideArea/index.ts";
 export default {
   components: {
     Swiper,
@@ -248,7 +248,8 @@ export default {
     ServiceArea,
     WelcomeArea,
     GridboxArea,
-    TabArea
+    TabArea,
+    StaticSlideArea
   },
   data() {
     return {
@@ -264,14 +265,14 @@ export default {
           path: "#"
         } as HeaderButtonInterface
       },
-      slides: [
+      slideList: [
         {
-          path: require("~/assets/slider3.png"),
+          img: require("~/assets/slider3.png"),
           title: "Lorem Ipsum",
-          subTitle: "dolor sit amet"
+          subTitle: "dolor sit amet",
         },
         {
-          path: require("~/assets/slider1.png"),
+          img: require("~/assets/slider1.png"),
           title: "Lorem Ipsum",
           subTitle: "dolor sit amet"
         }
@@ -326,7 +327,7 @@ export default {
           content:
             "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..",
           buttonTitle: "Lorem Ipsum",
-          path:"#"
+          path: "#"
         },
         {
           img: require("@/assets/image1.jpg"),
@@ -334,7 +335,7 @@ export default {
           content:
             "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..",
           buttonTitle: "Lorem Ipsum",
-          path:"#"
+          path: "#"
         },
         {
           img: require("@/assets/image1.jpg"),
@@ -342,7 +343,7 @@ export default {
           content:
             "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..",
           buttonTitle: "Lorem Ipsum",
-          path:"#"
+          path: "#"
         },
         {
           img: require("@/assets/image1.jpg"),
@@ -350,7 +351,7 @@ export default {
           content:
             "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..",
           buttonTitle: "Lorem Ipsum",
-          path:"#"
+          path: "#"
         },
         {
           img: require("@/assets/image1.jpg"),
@@ -358,7 +359,7 @@ export default {
           content:
             "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..",
           buttonTitle: "Lorem Ipsum",
-          path:"#"
+          path: "#"
         },
         {
           img: require("@/assets/image1.jpg"),
@@ -366,7 +367,7 @@ export default {
           content:
             "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..",
           buttonTitle: "Lorem Ipsum",
-          path:"#"
+          path: "#"
         },
         {
           img: require("@/assets/image1.jpg"),
@@ -374,7 +375,7 @@ export default {
           content:
             "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..",
           buttonTitle: "Lorem Ipsum",
-          path:"#"
+          path: "#"
         },
         {
           img: require("@/assets/image1.jpg"),
@@ -382,7 +383,7 @@ export default {
           content:
             "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..",
           buttonTitle: "Lorem Ipsum",
-          path:"#"
+          path: "#"
         }
       ] as GridBoxInterface[],
       tabList: [
@@ -391,23 +392,48 @@ export default {
           img: require("@/assets/image1.jpg"),
           iconClass: "el-icon-error",
           subTitle: "Lorem Ipsum",
-          content: "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..",
+          content:
+            "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.."
         },
         {
           title: "Lorem Ipsum2",
           img: require("@/assets/image1.jpg"),
           iconClass: "el-icon-error",
           subTitle: "Lorem Ipsum2",
-          content: "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..",
+          content:
+            "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.."
         },
         {
           title: "Lorem Ipsum3",
           img: require("@/assets/image1.jpg"),
           iconClass: "el-icon-error",
           subTitle: "Lorem Ipsum3",
-          content: "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..",
+          content:
+            "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.."
         }
-      ] as TabInterface[]
+      ] as TabInterface[],
+      staticSlideList: [
+        {
+          title: "Lorem Ipsum",
+          content:
+            "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..",
+            img: require("@/assets/image1.jpg"),
+          button: {
+            title: "Lorem Ipsum",
+            path: "#"
+          } as StaticSlideButtonInterface
+        },
+                {
+          title: "Lorem Ipsum",
+          content:
+            "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..",
+            img: require("@/assets/image1.jpg"),
+          button: {
+            title: "Lorem Ipsum",
+            path: "#"
+          } as StaticSlideButtonInterface
+        }
+      ] as StaticSlideInterface[]
     };
   }
 };

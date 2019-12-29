@@ -16,42 +16,6 @@
                   :aria-selected="index===0?'true':'false'"
                 >{{tab.title}}</a>
               </li>
-
-              <!-- <li class="nav-item">
-                  <a
-                    class="nav-link active"
-                    id="0object-tab"
-                    data-toggle="tab"
-                    href="#0object"
-                    role="tab"
-                    aria-controls="0object"
-                    aria-selected="true"
-                  >Excellent Services</a>
-                </li>
-
-                <li class="nav-item">
-                  <a
-                    class="nav-link"
-                    id="profile-tab"
-                    data-toggle="tab"
-                    href="#profile"
-                    role="tab"
-                    aria-controls="profile"
-                    aria-selected="false"
-                  >Qualified Doctors</a>
-                </li>
-
-                <li class="nav-item">
-                  <a
-                    class="nav-link"
-                    id="contact-tab"
-                    data-toggle="tab"
-                    href="#contact"
-                    role="tab"
-                    aria-controls="contact"
-                    aria-selected="false"
-                  >Emergency Departments</a>
-              </li>-->
             </ul>
           </div>
         </div>
@@ -85,78 +49,6 @@
               </div>
             </div>
           </div>
-
-          <!-- <div
-            class="tab-pane fade show active"
-            id="0object"
-            role="tabpanel"
-            aria-labelledby="0object-tab"
-          >
-            <div class="row align-items-center">
-              <div class="col-xl-6 col-md-6">
-                <div class="business_info">
-                  <div class="icon">
-                    <i class="flaticon-first-aid-kit"></i>
-                  </div>
-                  <h3>Leading edge care for Your family</h3>
-                  <p>
-                    Esteem spirit temper too say adieus who direct esteem.
-                    It esteems luckily picture placing drawing. Apartments frequently or motionless on
-                    reasonable projecting expression.
-                  </p>
-                </div>
-              </div>
-              <div class="col-xl-6 col-md-6">
-                <div class="business_thumb">
-                  <img src="@/assets/image8.jpg" alt />
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="tab-pane fade" id="1object" role="tabpanel" aria-labelledby="1object-tab">
-            <div class="row align-items-center">
-              <div class="col-xl-6 col-md-6">
-                <div class="business_info">
-                  <div class="icon">
-                    <i class="flaticon-first-aid-kit"></i>
-                  </div>
-                  <h3>Leading edge care for Your family</h3>
-                  <p>
-                    Esteem spirit temper too say adieus who direct esteem.
-                    It esteems luckily picture placing drawing. Apartments frequently or motionless on
-                    reasonable projecting expression.
-                  </p>
-                </div>
-              </div>
-              <div class="col-xl-6 col-md-6">
-                <div class="business_thumb">
-                  <img src="@/assets/image8.jpg" alt />
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="tab-pane fade" id="2object" role="tabpanel" aria-labelledby="2object-tab">
-            <div class="row align-items-center">
-              <div class="col-xl-6 col-md-6">
-                <div class="business_info">
-                  <div class="icon">
-                    <i class="flaticon-first-aid-kit"></i>
-                  </div>
-                  <h3>Leading edge care for Your family</h3>
-                  <p>
-                    Esteem spirit temper too say adieus who direct esteem.
-                    It esteems luckily picture placing drawing. Apartments frequently or motionless on
-                    reasonable projecting expression.
-                  </p>
-                </div>
-              </div>
-              <div class="col-xl-6 col-md-6">
-                <div class="business_thumb">
-                  <img src="@/assets/image8.jpg" alt />
-                </div>
-              </div>
-            </div>
-          </div> -->
         </div>
       </div>
     </div>

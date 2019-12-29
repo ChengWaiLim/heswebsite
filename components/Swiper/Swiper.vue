@@ -1,7 +1,7 @@
 <template>
     <div class="swiper-container">
       <div class="swiper-wrapper">
-        <div class="swiper-slide" v-for="(slide, index) in slides" v-bind:key="index" :style="{'background-image':'url('+slide.path+')'}">
+        <div class="swiper-slide" v-for="(slide, index) in slideList" v-bind:key="index" :style="{'background-image':'url('+slide.img+')'}">
           <div class="swiper-box">
             <div class="swiper-title">{{slide.title}}</div>
             <div class="swiper-sub-title">{{slide.subTitle}}</div>
@@ -21,7 +21,7 @@ import SlideInterface from "./Interface"
 export default Vue.extend( {
   name:"swiper",
   props: {
-    slides:{
+    slideList:{
       type: Array as () => Array<SlideInterface>,
       required: true,
     }
